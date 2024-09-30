@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A health tracker and care platform to monitor fitness, water intake, sleep, and overall health."
+    />
+    <title>Health Care Tracker - Sleep Tracking</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f6f9;
+        color: #333;
+      }
+
+      header {
+        background-color: #28a745;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #222;
+        padding: 10px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      nav a:hover {
+        background-color: #444;
+        border-radius: 5px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #28a745;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: inline-block;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        background-color: #28a745;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #218838;
+      }
+
+      .sleep-tracking {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #sleep-quality {
+        width: 25%;
+        border-radius: 1rem;
+        padding: 10px;
+        outline: none;
+        box-shadow: 1px 1px 1px #999;
+      }
+
+      #sleep-notes {
+        max-width: 100%;
+        line-height: 1.5;
+        box-shadow: 1px 1px 1px #999;
+        border-radius: 1rem;
+        padding: 20px;
+        width: 50%;
+        margin-bottom: 1rem;
+        outline: none;
+      }
+
+      #sleep-notes:focus{
+        outline: none;
+      }
+
+      #sleep-hours{
+        width: 25%;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 1px #999;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Health Care Tracker</h1>
+      <p>Monitor your health, fitness, and wellness easily.</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="Myprofile.html">My Profile</a>
+      <a href="FitnessTracking.html">Fitness Tracking</a>
+      <a href="nuitrition.html">Nutrition</a>
+      <a href="Sleep.html">Sleep</a>
+      <a href="Contacts.html">Contact</a>
+    </nav>
+
+    <div class="container" id="sleep">
+      <div class="section">
+        <h2>Sleep Tracking</h2>
+        <form>
+          <div class="sleep-tracking">
+            <label for="sleep-hours">Hours Slept Last Night:</label>
+            <input
+              type="number"
+              id="sleep-hours"
+              name="sleep-hours"
+              placeholder="Enter hours of sleep"
+              required minlength="1" maxlength="13"
+            />
+          </div>
+
+          <div class="sleep-tracking">
+            <label for="sleep-quality">Quality of Sleep:</label>
+            <select id="sleep-quality" name="sleep-quality" required>
+              <option value="none">Select Quality</option>
+              <option value="very-poor">Very Poor</option>
+              <option value="poor">Poor</option>
+              <option value="average">Average</option>
+              <option value="good">Good</option>
+              <option value="very-good">Very Good</option>
+            </select>
+          </div>
+          <div class="sleep-tracking">
+            <label for="sleep-notes">Additional Notes:</label>
+            <textarea
+              id="sleep-notes"
+              name="sleep-notes"
+              placeholder="Enter any additional notes about your sleep"
+              rows="5"
+              cols="33"
+            ></textarea>
+          </div>
+          <button type="submit">Submit Sleep Data</button>
+        </form>
+      </div>
+    </div>
+
+    <footer style="padding:5px 10px">
+      <p>&copy; 2024 Health Care Tracker. All rights reserved.</p>
+      <p>
+        <a href="#contact">Contact Us</a> |
+        <a href="#privacy">Privacy Policy</a>
+      </p>
+    </footer>
+  </body>
+</html>

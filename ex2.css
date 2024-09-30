@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    background-color: #28a745;
+    color: #fff;
+    padding: 20px;
+    height: 200px;
+    /* width: 100%; */
+    display: flex;
+    
+}
+
+header{
+    justify-content: space-between;
+}
+
+.heading{
+    height: 90px;
+}
+
+#name{
+    font-size: 40px;
+}
+
+.heading p{
+    font-size: 20px;
+}
+
+.logoborder{
+    height: 200px;
+    width: 300px;
+    padding-right: 50px;
+   
+}
+
+.logo{
+
+    height:100%;
+    width: 100%;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/015/393/864/non_2x/green-healthcare-logo-design-with-human-life-symbol-illustration-concept-vector.jpg");
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    padding: 10px;
+    width: 100%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard {
+    color: #28a745;
+}
+
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.signin{
+
+    background-color: #f8f9fa;
+    margin: 30px;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.mid{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sign{
+    padding-top: 30px;
+
+
+}
+
+.imgborder{
+    height: 300px;
+    width: 400px;
+    margin: 50px;
+    
+}
+
+.img{
+    background-image: url("https://cdn.dribbble.com/userupload/16411602/file/still-74a3456b3218804a775e880d2183043c.png?resize=400x0");
+    height: 300px;
+    width: 500px;
+    background-size: cover;
+}
+
+.health {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    height: 200px;
+    width: 95%;
+    border-radius: 10px;
+    
+}
+
+.health h3{
+    display: block;
+
+}
+
+
+.foot{
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    padding: 10px;
+    color: #f8f9fa;
+}
+
+.foot a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
+
+

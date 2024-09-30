@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Tracking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #28a745;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #222;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        .container, .food-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #28a745;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .food-list {
+            margin-top: 20px;
+        }
+
+        .food-item {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nutrition Tracking</h1>
+    <p>Log your daily nutrition intake here.</p>
+</header>
+
+<nav>
+    <a href="index.html">Dashboard</a>
+    <a href="Myprofile.html">My Profile</a>
+        <a href="FitnessTracking.html">Fitness Tracking</a>
+        <a href="nuitrition.html">Nutrition</a>
+        <a href="Sleep.html">Sleep</a>
+        <a href="Contacts.html">Contact</a>
+</nav>
+
+<div class="food-list" id="foodList">
+    <h3>Logged Foods:</h3>
+    <p class="nutritioLogData"></p>
+</div>
+<div class="container">
+    <h2>Log Your Nutrition</h2>
+
+    <label for="calories">Calories Consumed Today:</label>
+    <input type="number" id="calories" placeholder="Enter calories" required>
+
+    <label for="water">Water Intake (Liters):</label>
+    <input type="number" id="water" placeholder="Enter water intake in liters" step="0.1" required>
+
+    <label for="food">Food Consumed:</label>
+    <input type="text" id="food" placeholder="Enter food item" required>
+
+    <button class="saveNutrition">Log Nutrition</button>
+
+</div>
+
+<footer style="padding: 10px 20px;">
+    <p>&copy; 2024 Health Tracker. All rights reserved.</p>
+    <p><a href="#contact">Contact Us</a> | <a href="#privacy">Privacy Policy</a></p>
+</footer>
+
+<script src="scripts/nutrition.js"></script>
+</body>
+</html>
