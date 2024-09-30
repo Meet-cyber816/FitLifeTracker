@@ -8,7 +8,7 @@
 The FitlLifeTracker project only contains basic HTML,CSS and a little Java script.
 
 Installation:
-     You can clone the repository using followring command : git clone git clone https://github.com/Meet-cyber816/FitLifeTracker.git
+     You can clone the repository using followring command : git clone https://github.com/Meet-cyber816/FitLifeTracker.git
 
 
                  
